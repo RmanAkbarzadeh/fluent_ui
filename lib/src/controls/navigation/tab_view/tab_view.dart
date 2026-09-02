@@ -624,9 +624,10 @@ class _TabViewState extends State<TabView> {
                         children: [
                           // scroll buttons if needed
                           if (showScrollButtons)
-                            if(direction == TextDirection.ltr)
-                                 backwardButton()
-                                else forwardButton(),
+                            if (direction == TextDirection.ltr)
+                              backwardButton()
+                            else
+                              forwardButton(),
                           // tabs area (flexible/expanded)
                           if (scrollable)
                             Expanded(child: listView)
@@ -634,9 +635,10 @@ class _TabViewState extends State<TabView> {
                             Flexible(child: listView),
                           // scroll buttons if needed
                           if (showScrollButtons)
-                            if(direction == TextDirection.ltr)
-                                 forwardButton()
-                                else backwardButton(),
+                            if (direction == TextDirection.ltr)
+                              forwardButton()
+                            else
+                              backwardButton(),
                           // new tab button
                           if (widget.showNewButton)
                             Padding(
